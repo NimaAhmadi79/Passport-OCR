@@ -22,7 +22,7 @@ The system relies on the following libraries and tools:
 
 **Example of what will be extracted:**
 
-![alt text](https://github.com/NimaAhmadi79/Socket-programming-P2P-different-threads-/blob/master/Capture.PNG)
+![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/1.PNG)
 
 ---
 
@@ -56,7 +56,7 @@ The development environment includes VsCode for coding and Jupyter Notebook for 
 
 sample input after performing preprocessing:
 
-![alt text](https://github.com/NimaAhmadi79/Socket-programming-P2P-different-threads-/blob/master/Capture.PNG)
+![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/2.PNG)
 
 ---
 
@@ -65,23 +65,26 @@ sample input after performing preprocessing:
 Template matching involves rotating templates on the passport image and computing convolutions to identify field coordinates. After preprocessing, templates are separated for each field using software tools, and their coordinates are determined using cv2.TM_CCOEFF.
 
 father's name template:
-![alt text](https://github.com/NimaAhmadi79/Socket-programming-P2P-different-threads-/blob/master/Capture.PNG)
+![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/3.PNG)
 
 ---
 
 **Separating Characters from Fields:**
 
 example of identifying filed and taking it from an image:
-![alt text](https://github.com/NimaAhmadi79/Socket-programming-P2P-different-threads-/blob/master/Capture.PNG)
+
+![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/4.PNG)
 
 Characters within fields are separated by performing vertical summation on cropped sections of the image. This process involves adding pixels vertically and identifying character positions based on variations in pixel sums. Techniques such as derivative calculation, threshold determination, and connected components are utilized to minimize errors in character separation.
 
 
 plot of summation before determining threshold:
-![alt text](https://github.com/NimaAhmadi79/Socket-programming-P2P-different-threads-/blob/master/Capture.PNG)
+
+![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/5.PNG)
 
 plot of summation after determining a threshold:
-![alt text](https://github.com/NimaAhmadi79/Socket-programming-P2P-different-threads-/blob/master/Capture.PNG)
+
+![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/6.PNG)
 
 ---
 
@@ -90,9 +93,12 @@ plot of summation after determining a threshold:
 To address issues such as stuck characters due to noise, post-processing techniques are implemented. Functions like check_extract_char, connected components, and hole filling are employed to rectify errors in character separation.
 
 before performing connected components:
-![alt text](https://github.com/NimaAhmadi79/Socket-programming-P2P-different-threads-/blob/master/Capture.PNG)
+
+![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/7.PNG)
+
 before performing connected components:
-![alt text](https://github.com/NimaAhmadi79/Socket-programming-P2P-different-threads-/blob/master/Capture.PNG)
+
+![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/8.PNG)
 
 ---
 
@@ -113,13 +119,16 @@ The system includes a function to scan the barcode present on passports, extract
 Information present in two parallel lines at the bottom of passports is extracted using summation techniques. The distinct pattern of these lines aids in the accurate extraction of information.
 
 
-![alt text](https://github.com/NimaAhmadi79/Socket-programming-P2P-different-threads-/blob/master/Capture.PNG)
+![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/9.PNG)
 
 ---
 
-**Sample Result:**
+**Sample Output:**
 
-![alt text](https://github.com/NimaAhmadi79/Socket-programming-P2P-different-threads-/blob/master/Capture.PNG)
+![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/10.PNG)
+
+--- 
+
 **References:**
 
 - `Numpy`: https://numpy.org/
