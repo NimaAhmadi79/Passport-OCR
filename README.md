@@ -65,6 +65,7 @@ sample input after performing preprocessing:
 Template matching involves rotating templates on the passport image and computing convolutions to identify field coordinates. After preprocessing, templates are separated for each field using software tools, and their coordinates are determined using cv2.TM_CCOEFF.
 
 father's name template:
+
 ![alt text](https://github.com/NimaAhmadi79/Passport-OCR/blob/master/images%20for%20readme/3.PNG)
 
 ---
